@@ -1,0 +1,3 @@
+- when loading in cdn files, make sure its .min for the ui router
+- the syntax for git ignore node modules
+- using "open /Applications/Google\ Chrome.app --args --allow-file-access-from-files" for cross browser"

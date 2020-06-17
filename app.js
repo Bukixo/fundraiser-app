@@ -1,12 +1,46 @@
-angular.module("App", ["main"]);
 
-angular.module("main", []);
+(function () {
 
-angular.module("main").controller("mainController", function($scope){
+    'use strict'
+    angular.module("App", ["main"]);
 
-    var data = "roger";
-    $scope.data = "that";
+    var myApp = angular.module("main", ["ui.router"]);
 
-    
+    myApp.config(function($stateProvider) {
+        var helloState = {
+            name: "simpleExampleView",
+            url: "/simpleExampleView",
+            templateUrl: "simpleExampleView.html"
+        }
 
-});
+        var aboutState = {
+            name: "home",
+            url: "/",
+            template: ""
+        }
+
+        $stateProvider.state(helloState);
+        $stateProvider.state(aboutState);
+    });
+
+    myApp.controller("simpleExampeViewModel", function () {
+        var vm = this;
+
+        vm.name = {
+            first: '',
+            last: ''
+        };
+
+        vm.fullName = '';
+
+        vm.submit - function () {
+            vm.fullName = vm.name.first + '' + vm.name.last;
+        }
+
+
+    });
+})()
+
+
+
+

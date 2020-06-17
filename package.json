@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "live": "live-server --cors"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/Bukixo/fundraiser-app#readme",
   "dependencies": {
-    "angular": "^1.8.0"
+    "@uirouter/angularjs": "^1.0.26",
+    "angular": "^1.8.0",
+    "angular-route": "^1.8.0"
   }
 }

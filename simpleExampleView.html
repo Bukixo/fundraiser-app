@@ -1,0 +1,21 @@
+<div class= "col-3-md" ng-controller="simpleExampeViewModel">
+    <div>
+        <span>First Name: </span>
+        <input type="text" class="form-control" ng-model="vm.Name.First" />
+    </div>
+
+    <div>
+        <span>Last Name: </span>
+        <input type="text" class="form-control" ng-model="vm.Name.Last" />
+    </div>
+    <br />
+    <div>
+        <button type="button" ng-click= "vm.submit()">Submit</button>
+    </div>
+
+    <hr />
+    <div>
+        <span>Your Name is {{ vm.fullname }}</span>
+    </div>
+
+</div>
