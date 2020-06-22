@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('app').component('simpleExample', {
+    angular.module('App').component('simpleExample', {
         controllerAs: 'vm',
         controller: function () {
             var vm = this;
