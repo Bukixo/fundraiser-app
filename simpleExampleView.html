@@ -1,12 +1,14 @@
-<div class= "col-3-md" ng-controller="simpleExampeViewModel">
+<div class= "col-3-md" ng-controller="simpleExampleViewModel as vm">
     <div>
         <span>First Name: </span>
-        <input type="text" class="form-control" ng-model="vm.Name.First" />
+        <input type="text" class="form-control" ng-model="vm.name.first" />
+        {{ vm.name.first }}
     </div>
 
     <div>
         <span>Last Name: </span>
-        <input type="text" class="form-control" ng-model="vm.Name.Last" />
+        <input type="text" class="form-control" ng-model="vm.name.last" />
+        {{ vm.name.last }}
     </div>
     <br />
     <div>
@@ -15,7 +17,7 @@
 
     <hr />
     <div>
-        <span>Your Name is {{ vm.fullname }}</span>
+        <span>Your Name is {{ vm.fullName }}</span>
     </div>
 
 </div>

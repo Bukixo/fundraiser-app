@@ -23,7 +23,7 @@
         $stateProvider.state(aboutState);
     });
 
-    myApp.controller("simpleExampeViewModel", function () {
+    myApp.controller("simpleExampleViewModel", function () {
         var vm = this;
 
         vm.name = {
@@ -33,12 +33,31 @@
 
         vm.fullName = '';
 
-        vm.submit - function () {
-            vm.fullName = vm.name.first + '' + vm.name.last;
+        vm.submit = function() {
+            console.log(vm.name);
+            vm.fullName = vm.name.first + ' ' + vm.name.last;
+            console.log(vm.name.first, vm.name.helloStateast, vm.fullName);
         }
 
+        // $scope.getdetails = function () {
+        
+        //     $scope.result = "testing";
 
+        //     $scope.name = {
+        //         first: '',
+        //         last: ''
+        //     };
+        // }
+
+    // var vm = this;
+
+    // vm.openModal = openModal;
+    
+    // function openModal(){
+    //     console.log("something");
+    // }
     });
+    
 })()
 
 
