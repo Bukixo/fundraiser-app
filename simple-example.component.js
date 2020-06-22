@@ -18,6 +18,7 @@
                 vm.fullName = vm.name.first + ' ' + vm.name.last;
                 console.log(vm.name.first, vm.name.helloStateast, vm.fullName);
             }
-        }
+        },
+        templateUrl:'simple-example-component.html'
     });
 })();
