@@ -38,24 +38,6 @@
             vm.fullName = vm.name.first + ' ' + vm.name.last;
             console.log(vm.name.first, vm.name.helloStateast, vm.fullName);
         }
-
-        // $scope.getdetails = function () {
-        
-        //     $scope.result = "testing";
-
-        //     $scope.name = {
-        //         first: '',
-        //         last: ''
-        //     };
-        // }
-
-    // var vm = this;
-
-    // vm.openModal = openModal;
-    
-    // function openModal(){
-    //     console.log("something");
-    // }
     });
     
 })()
